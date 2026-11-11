@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="abr/logo-icon.png">
+<link rel="apple-touch-icon" href="abr/logo-icon.png">
 <title>ABR Kennels — AKC Great Danes | Home of the Rain Danes</title>
 <meta name="description" content="ABR Kennels Boarding & Training Center — AKC Great Danes & English Mastiffs raised with faith and family in Glasgow, KY. Home of the Rain Danes.">
 <link rel="canonical" href="https://abrkennel.com/">
@@ -60,6 +62,7 @@
   .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 22px;max-width:1120px;margin:0 auto}
   .brandline{display:flex;align-items:center;gap:11px;font-family:var(--disp);color:var(--purple);font-size:19px}
   .brandline svg{height:38px;width:auto;flex:0 0 auto}
+  .brandline img.navlogo{height:40px;width:auto;flex:0 0 auto}
   .navlinks{display:flex;gap:4px;flex-wrap:wrap}
   .navlinks a{font-family:var(--body);font-weight:500;font-size:13.5px;color:var(--ink);padding:8px 11px;border-radius:8px}
   .navlinks a:hover{background:var(--purple-soft);color:var(--purple)}
@@ -74,6 +77,8 @@
   /* HERO */
   .hero{background:radial-gradient(120% 90% at 50% 0%,#fff 0%,var(--cream) 60%);text-align:center;padding:56px 0 70px;position:relative;overflow:hidden}
   .hero .mark{margin:0 auto 8px}
+  .hlogo{margin:0 auto 10px;max-width:min(480px,86vw);line-height:0}
+  .hlogo img{width:100%;height:auto;display:block}
   .hero h1{font-size:clamp(40px,9vw,86px);color:var(--purple);letter-spacing:.01em}
   .hero .tag{font-family:var(--script);color:var(--ink);font-size:clamp(22px,4vw,34px);margin-top:2px}
   .hero .sub{color:var(--mid);font-weight:300;max-width:34em;margin:16px auto 0;font-size:17px}
@@ -169,7 +174,7 @@
 
 <header>
   <div class="nav">
-    <a class="brandline" href="#home"><svg viewBox="0 0 200 130"><use href="#abrmark"/></svg><span>ABR Kennels</span></a>
+    <a class="brandline" href="#home"><img class="navlogo" src="abr/logo-icon.png" alt=""><span>ABR Kennels</span></a>
     <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
     <nav class="navlinks" id="navlinks">
       <a href="#home">Home</a>
@@ -187,9 +192,7 @@
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="wrap">
-    <svg class="mark" viewBox="0 0 200 130" width="150" height="98"><use href="#abrmark"/></svg>
-    <h1>ABR Kennels</h1>
-    <div class="tag">Home of the Rain Danes</div>
+    <h1 class="hlogo"><img src="abr/logo.png" alt="ABR Kennels — Home of the Rain Danes · Boarding &amp; Training Center"></h1>
     <p class="sub">AKC <b>Great Danes</b> &amp; <b>English Mastiffs</b>, raised with faith and family in Glasgow, Kentucky. Boarding &amp; Training Center.</p>
     <div class="cta-row">
       <a class="btn solid" href="abr-application.html">Apply for a Puppy →</a>
