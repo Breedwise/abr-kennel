@@ -49,6 +49,14 @@
   .heroimg .himg{width:auto;max-width:min(430px,88vw);max-height:560px;object-fit:contain;border-radius:16px;display:block;margin:0 auto;box-shadow:0 18px 50px rgba(0,0,0,.18)}
   .dog .pht img{width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block}
   .pimg{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center;border-radius:14px;display:block}
+  .plitter{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  @media(max-width:900px){.plitter{grid-template-columns:1fr 1fr}}
+  @media(max-width:480px){.plitter{grid-template-columns:1fr}}
+  .pcard{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .pcard img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center;display:block}
+  .pmeta{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 14px}
+  .pname{font-weight:700;font-size:14.5px;color:var(--ink)}
+  .pavail{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#4c9a5a;border-radius:20px;padding:3px 10px;white-space:nowrap}
   .litterimg{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:center;border-radius:12px;display:block;margin-top:14px}
   .about .aboutimg{width:100%;min-height:320px;max-height:430px;object-fit:cover;object-position:center;border-radius:14px;display:block}
   .btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--body);font-weight:600;font-size:15px;border-radius:44px;padding:14px 28px;cursor:pointer;border:0;transition:.18s}
@@ -233,6 +241,25 @@
       <div class="card"><h3>Current / Upcoming Litter</h3><p>Announce your planned pairings here — sire × dam, expected colors, due date, and how many are available. Families reserve with a deposit.</p><img class="litterimg" src="abr/litter.jpg" alt="ABR Great Dane puppy" loading="lazy"></div>
       <div class="card"><h3>Join the Waitlist</h3><p>Not sure which litter is right? Get on the waitlist and we'll reach out when the right puppy is available for your family.</p><a class="btn solid" href="abr-application.html" style="margin-top:16px">Join the Waitlist →</a></div>
     </div>
+    <div style="text-align:center;margin:48px 0 10px">
+      <div class="eyebrow">Available Now</div>
+      <h3 style="font-family:var(--body);font-weight:700;font-size:19px;color:var(--ink);margin-top:8px">Available Puppies</h3>
+      <p style="color:var(--mid);font-weight:300;font-size:14.5px;max-width:580px;margin:8px auto 0">Our current AKC Great Dane litter. Reach out to confirm availability, ask about a color, and reserve your puppy.</p>
+    </div>
+    <div class="plitter">
+      <figure class="pcard"><img src="abr/pup-avail-1.jpg" alt="Blue Great Dane puppy available at ABR Kennels" loading="lazy"><figcaption class="pmeta"><span class="pname">Blue</span><span class="pavail">Available</span></figcaption></figure>
+      <figure class="pcard"><img src="abr/pup-avail-2.jpg" alt="Black and tan Great Dane puppy available at ABR Kennels" loading="lazy"><figcaption class="pmeta"><span class="pname">Black &amp; Tan</span><span class="pavail">Available</span></figcaption></figure>
+      <figure class="pcard"><img src="abr/pup-avail-3.jpg" alt="Chocolate merle Great Dane puppy available at ABR Kennels" loading="lazy"><figcaption class="pmeta"><span class="pname">Chocolate Merle</span><span class="pavail">Available</span></figcaption></figure>
+      <figure class="pcard"><img src="abr/pup-avail-4.jpg" alt="Black Great Dane puppy available at ABR Kennels" loading="lazy"><figcaption class="pmeta"><span class="pname">Black</span><span class="pavail">Available</span></figcaption></figure>
+      <figure class="pcard"><img src="abr/pup-avail-5.jpg" alt="Black Great Dane puppy available at ABR Kennels" loading="lazy"><figcaption class="pmeta"><span class="pname">Black</span><span class="pavail">Available</span></figcaption></figure>
+      <figure class="pcard"><img src="abr/pup-avail-6.jpg" alt="Chocolate and white Great Dane puppy available at ABR Kennels" loading="lazy"><figcaption class="pmeta"><span class="pname">Chocolate &amp; White</span><span class="pavail">Available</span></figcaption></figure>
+      <figure class="pcard"><img src="abr/pup-avail-7.jpg" alt="Chocolate Great Dane puppy available at ABR Kennels" loading="lazy"><figcaption class="pmeta"><span class="pname">Chocolate</span><span class="pavail">Available</span></figcaption></figure>
+      <figure class="pcard"><img src="abr/pup-avail-8.jpg" alt="Chocolate Great Dane puppy available at ABR Kennels" loading="lazy"><figcaption class="pmeta"><span class="pname">Chocolate</span><span class="pavail">Available</span></figcaption></figure>
+      <figure class="pcard"><img src="abr/pup-avail-9.jpg" alt="Blue merle Great Dane puppy available at ABR Kennels" loading="lazy"><figcaption class="pmeta"><span class="pname">Blue Merle</span><span class="pavail">Available</span></figcaption></figure>
+      <figure class="pcard"><img src="abr/pup-avail-10.jpg" alt="Fawn Great Dane puppy available at ABR Kennels" loading="lazy"><figcaption class="pmeta"><span class="pname">Fawn</span><span class="pavail">Available</span></figcaption></figure>
+    </div>
+    <div style="text-align:center;margin-top:26px"><a class="btn solid" href="abr-application.html">Apply to Reserve a Puppy →</a></div>
+
     <div style="text-align:center;margin:48px 0 22px">
       <div class="eyebrow">The Nursery</div>
       <h3 style="font-family:var(--body);font-weight:700;font-size:19px;color:var(--ink);margin-top:8px">Recent ABR Puppies</h3>
