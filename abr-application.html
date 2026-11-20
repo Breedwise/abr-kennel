@@ -173,7 +173,7 @@
   var v=function(id){var el=document.getElementById(id);return el?(el.value||'').trim():'';};
   $('#f').addEventListener('submit',function(e){
     e.preventDefault();
-    if($('#company').value) return;
+    if($('#hp_field').value) return;
     var err=$('#err');
     var first=v('first'),last=v('last'),email=v('email').toLowerCase(),phone=v('phone');
     if(!first||!last){err.textContent='Please enter your first and last name.';return;}
