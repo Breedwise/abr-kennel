@@ -47,7 +47,7 @@
   .ph{background:var(--cream2);border:2px dashed var(--purple-line);border-radius:14px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-size:13px;font-style:italic;padding:16px;min-height:120px}
   /* every slot image fills + auto-centers (object-position) so no manual crop refinement is needed */
   .heroimg .himg{width:auto;max-width:min(430px,88vw);max-height:560px;object-fit:contain;border-radius:16px;display:block;margin:0 auto;box-shadow:0 18px 50px rgba(0,0,0,.18)}
-  .dog .pht img{width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block}
+  .dog .pht img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 38%;display:block}
   .pimg{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center;border-radius:14px;display:block}
   .plitter{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
   @media(max-width:900px){.plitter{grid-template-columns:1fr 1fr}}
@@ -110,7 +110,7 @@
   @media(max-width:480px){.grid{grid-template-columns:1fr}}
   .dog{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 10px 30px -22px rgba(0,0,0,.4);transition:.18s;display:flex;flex-direction:column}
   .dog:hover{transform:translateY(-3px);box-shadow:0 18px 40px -22px rgba(0,0,0,.45)}
-  .dog .pht{aspect-ratio:1/1;border-bottom:1px solid var(--line)}
+  .dog .pht{aspect-ratio:1/1;border-bottom:1px solid var(--line);position:relative;overflow:hidden;flex:0 0 auto;min-height:0}
   .dog .pht .ph{min-height:100%;border:0;border-radius:0;background:var(--cream2)}
   .dog .body{padding:14px 16px 16px;flex:1;display:flex;flex-direction:column;align-items:flex-start}
   .dog .nm{font-family:var(--disp);font-size:19px;color:var(--purple)}
